@@ -16,17 +16,17 @@ function multiply(number1, number2) {
 document.getElementById('multiply').addEventListener('click', function() {
   const number1 = parseFloat(document.getElementById('number1').value);
   const number2 = parseFloat(document.getElementById('number2').value);
-  const result = multiplication(number1, number2);
+  const result = multiply(number1, number2);
   document.getElementById('calculation-result').textContent = result;
 });
 
-function division(number1, number2) {
+function divide(number1, number2) {
     return number1 / number2;
 }
-document.getElementById('division').addEventListener('click', function() {
+document.getElementById('divide').addEventListener('click', function() {
   const number1 = parseFloat(document.getElementById('number1').value);
   const number2 = parseFloat(document.getElementById('number2').value);
-  const result = division(number1, number2);
+  const result = divide(number1, number2);
   document.getElementById('calculation-result').textContent = result;
 });
 
