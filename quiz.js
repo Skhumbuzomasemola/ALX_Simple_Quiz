@@ -12,11 +12,14 @@ function checkAnswer() {
     return;
   }
 
-  if (selectedOption.value === correctAnswer) {
-    alert("Correct! Well done.");
-  } else {
-    alert("That's incorrect. Try again!.");
-  }
+      const userAnswer = selectedOption.value; 
+
+    if (userAnswer === correctAnswer) {
+        feedback.textContent = "Correct! Well done.";
+    } else {
+        feedback.textContent = "That's incorrect. Try again!";
+    }
+}
 }
 
 let button = document.getElementById("SubmitAnswer");
